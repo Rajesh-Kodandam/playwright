@@ -53,16 +53,4 @@ test("[Complex] API call has a valid response schema", async ({
   expect(() => {
     schema.parse(body);
   }).not.toThrow();
-
-  // {
-  //   "id": String,
-  //   "name": String,
-  //   "relatedPeople": [
-  //     {
-  //       "id": String,
-  //       "name": String
-  //     },
-  //     ...
-  //   ] or null
-  // }
 });
